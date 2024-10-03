@@ -4,98 +4,108 @@ body {
     flex-direction: column;
     row-gap: 20px;
 }
-header .main-nav {
+.main-nav {
     background-color: #666666;
     height: 50px;
 }
 
-div.main {
+main {
     display: flex;
     justify-content: space-around;
 }
 
-.main .left {
+.left-content {
     flex-basis: 60%;
 }
-#left-titles {
+.right-arrow {
+    float: right;
+}
+.right-arrow img {
+    width: 40px;
+    height: 20px;
+}
+.left-titles-container {
     display: flex;
     justify-content: flex-start;
     column-gap: 15px;
 }
- #left-titles .title {
+.left-titles-container .title {
     background-color: #c6c6c6;
     flex-basis: 15%;
     height: 25px;
-    margin: 0px;
+    margin: 0;
 }
-#left-titles .title:first-child {
+.left-titles-container .title:first-child {
     background-color: #777;
 }
-.main .left #left-titles img {
-    width: 40px;
-    height: 20px;
-}
-.main .left .banner {
+
+.left-content .banner {
     flex-basis: 100%;
     height: 220px;
     margin-bottom: 20px;
     background-color: #777;
 }
-.main .left .left-items-list {
+
+.items-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 20px;
 }
-.left-items-list .item {
+.items-list .item {
     display: inline-flex;
     flex-direction: column;
     flex-basis: 18%;
     text-align: left;
 }
-.left-items-list .item img {
+.items-list .item img {
     width: 100%;
     height: 130px;
     background-color: #999;
 }
 
-.main .right {
+.right-content {
     flex-basis: 30%;
 }
-#right-titles {
+
+.titles-container {
     display: flex;
     justify-content: flex-end;
     column-gap: 20px;
 }
- #right-titles .title {
+.titles-container .title {
     background-color: #c6c6c6;
     width: 20px;
     height: 20px;
     margin: 0px 0px 5px 0px;
 }
-.main .right .banner {
+
+.right-content .banner {
     height: 220px;
     background-color: #999999;
     margin-bottom: 20px;
 }
-.main .right nav {
+
+.secondary-nav {
     background-color: #999999;
     height: 30px;
 }
-.main .right .right-items-list .item {
+
+.right-items-list .item {
     margin-top: 22px;
     margin-bottom: 22px;
 }
-.main .right .right-items-list .item img {
+.right-items-list .item img {
     width: 70px;
     height: 70px;
     float: left;
     margin: 0px 10px 0px 0px;
 }
-.main .right .right-items-list .item p {
+.right-items-list .item p {
     text-align: justify;
 }
-.main .right .right-items-list hr {
+
+.right-items-list hr {
     background-color: #b6b6b6;
     height: 2px;
 }
