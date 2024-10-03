@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     row-gap: 20px;
 }
-nav.main {
+header .main-nav {
     background-color: #666666;
     height: 50px;
 }
@@ -16,13 +16,6 @@ div.main {
 
 .main .left {
     flex-basis: 60%;
-}
-.main .left .right-arrow {
-    float: right;
-}
-.main .left .right-arrow img {
-    width: 40px;
-    height: 20px;
 }
 #left-titles {
     display: flex;
@@ -37,6 +30,10 @@ div.main {
 }
 #left-titles .title:first-child {
     background-color: #777;
+}
+.main .left #left-titles img {
+    width: 40px;
+    height: 20px;
 }
 .main .left .banner {
     flex-basis: 100%;
@@ -54,7 +51,7 @@ div.main {
     display: inline-flex;
     flex-direction: column;
     flex-basis: 18%;
-    text-align: justify;
+    text-align: left;
 }
 .left-items-list .item img {
     width: 100%;
